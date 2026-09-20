@@ -1,0 +1,40 @@
+CYBER SENTINEL - EXACT FILE CHANGE MAP
+
+REPLACE THESE EXISTING FILES:
+1. app.py
+   Reason: scanner orchestration/UI needed to handle missing providers
+   correctly and show evidence coverage instead of misleading output.
+
+2. threat_sources.py
+   Reason: provider integrations and local evidence handling.
+
+3. ai_analysis.py
+   Reason: Gemini configuration/error handling.
+
+4. requirements.txt
+   Reason: dependencies for the replacement modules.
+
+ADD THIS NEW FILE:
+5. .streamlit/secrets.toml.example
+   Reason: safe template showing where API keys belong.
+
+DO NOT replace unrelated project files.
+
+IMPORTANT:
+The screenshots alone prove that the providers were NOT CONFIGURED:
+- VirusTotal: Not configured
+- URLScan: Not configured
+- Gemini: not configured
+- Evidence coverage: Low
+- Threat score: Unknown
+
+So I cannot truthfully say that a particular old line of code caused those messages
+without seeing your original source files. These are replacement files that directly
+fix the configuration/error-handling side visible in the screenshots.
+
+If your old project has another file that imports the old provider functions,
+that file may also need adjustment.
+
+SECURITY:
+If the API-key URL visible in the screenshot contained a real secret, rotate/revoke
+that secret and use a new one in Streamlit Secrets.
