@@ -1,0 +1,35 @@
+# Cyber Sentinel AI
+**Intelligent Threat Detection. Safer Digital Decisions.**
+
+Streamlit cybersecurity dashboard for IPs, domains and URLs using optional VirusTotal, AbuseIPDB, URLScan and Gemini evidence interpretation.
+
+## Structure
+```text
+cyber-sentinel-ai/
+├── app.py
+├── threat_sources.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── assets/
+    └── logo.png
+```
+
+## Run locally
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+## Streamlit Secrets
+```toml
+GEMINI_API_KEY = "..."
+VIRUSTOTAL_API_KEY = "..."
+ABUSEIPDB_API_KEY = "..."
+URLSCAN_API_KEY = "..."
+URLSCAN_VISIBILITY = "unlisted"
+```
+Never commit API keys or `.streamlit/secrets.toml`.
+
+## Disclaimer
+External intelligence may be incomplete or unavailable. Do not submit credentials, tokens, private URLs or sensitive data. URLScan submissions share URLs with URLScan.
