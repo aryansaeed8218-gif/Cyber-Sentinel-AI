@@ -904,7 +904,7 @@ def gemini_analysis(result):
     }
 
     endpoint = (
-        "{}/models/gemini-3.6-flash:generateContent".format(
+        "{}/models/gemini-3.8-flash:generateContent".format(
             GEMINI_BASE
         )
     )
